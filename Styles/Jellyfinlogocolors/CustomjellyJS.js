@@ -31,15 +31,15 @@ waitForElement(['body'], ([body]) => {
 
   if (hour >= 6 && hour < 12) {
 
-    gradient = 'linear-gradient(100deg, #1b2735 0%, #090a0f 100%)';
+    gradient = 'linear-gradient(100deg, #9b5ee0 0%, #2534b8 100%)';
   } else if (hour >= 12 && hour < 18) {
    
-    gradient = 'linear-gradient(120deg, #1b2735 0%, #090a0f 100%)';
+    gradient = 'linear-gradient(120deg, #9b5ee0 0%, #2534b8 100%)';
   } else if (hour >= 18 && hour < 20) {
 
-    gradient = 'linear-gradient(150deg, #1b2735 0%, #090a0f 100%)';
+    gradient = 'linear-gradient(150deg, #9b5ee0 0%, #2534b8 100%)';
   } else {
-    gradient = 'linear-gradient(180deg, #1b2735 0%, #090a0f 100%)';
+    gradient = 'linear-gradient(180deg, #9b5ee0 0%, #2534b8 100%)';
   }
 
   backgroundContainer.style.background = gradient;

@@ -6,29 +6,29 @@
 :root {
     --elegantFinFooterText: "ElegantFin v25.05.03";
     color-scheme: dark;
-    --darkerGradientPoint: #111827;
-    --darkerGradientPointAlpha: rgba(17, 24, 39, 0.85);
-    --lighterGradientPoint: #1d2635;
-    --lighterGradientPointAlpha: rgba(29, 38, 53, 0.85);
-    --borderColor: rgb(71, 80, 92);
-    --lighterBorderColor: rgb(255 255 255 / 20%);
-    --headerColor: rgba(30, 40, 54, 0.8);
-    --drawerColor: rgba(30, 40, 54, 0.9);
-    --selectorBackgroundColor: rgb(55, 65, 81);
-    --selectorBackgroundColorAlpha: rgba(55, 65, 81, 0.5);
-    --btnDeleteColor: rgb(169, 29, 29);
-    --btnDeleteBorderColor: rgb(217, 84, 84);
-    --btnSubmitColor: rgb(61, 54, 178);
+    --darkerGradientPoint: rgb(155, 94, 224);
+    --darkerGradientPointAlpha: rgba(155, 94, 224, 0.85); 
+    --lighterGradientPoint: rgba(154, 92, 224, 0.459); 
+    --lighterGradientPointAlpha: rgba(154, 92, 224, 0.397); 
+    --borderColor: rgba(155, 94, 224, 0.39); 
+    --lighterBorderColor: rgb(154 92 224 / 20%); 
+    --headerColor: rgba(169, 82, 250, 0.212); 
+    --drawerColor: rgba(169, 82, 250, 0.212); 
+    --selectorBackgroundColor: rgba(155, 94, 224, 0.658);  
+    --selectorBackgroundColorAlpha: rgba(154, 92, 224, 0.397); 
+    --btnDeleteColor: rgba(101, 84, 253, 0.384); 
+    --btnDeleteBorderColor: rgba(36, 15, 224, 0.384); 
+    --btnSubmitColor: rgba(101, 84, 253, 0.384); 
     --btnSubmitBorderColor: rgb(117 111 226);
-    --checkboxCheckedBgColor: rgb(79, 70, 229);
-    --highlightOutlineColor: rgb(37, 99, 235);
-    --textColor: rgb(209, 213, 219);
-    --dimTextColor: rgb(156, 163, 175);
-    --activeColorAlpha: rgba(119, 91, 244, 0.9);
+    --checkboxCheckedBgColor: rgb(155, 94, 224, 0.39);
+    --highlightOutlineColor: rgb(180 118 204 / 47%);  
+    --textColor: #f4f4f5; 
+    --dimTextColor: rgb(223, 223, 223); 
+    --activeColorAlpha: rgba(119, 91, 244, 0.425);
     --activeColor: rgb(119, 91, 244);
-    --tableBodyColor: rgb(31 41 55 / 1);
+    --tableBodyColor: rgb(180 118 204 / 47%); 
     --uiAccentColor: rgb(117 111 226);
-    --btnMiniPlayColor: rgb(41 154 93);
+    --btnMiniPlayColor: rgb(155, 94, 224);
     --btnPlayBorderColor: color-mix(in srgb, var(--btnMiniPlayColor), rgb(255, 255, 255) 5%);
     --backgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint) 35%, var(--lighterGradientPoint));
     --cardBackgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint), var(--lighterGradientPoint) 25%);
@@ -55,7 +55,31 @@
 
     /* to revert to old icons, use 'Material Icons'*/
     --iconPack: 'Material Icons Round';
+
+
+
+    --scrollbar-thumb: #db0000;
+    --scrollbar-track: #00faa7;
 }
+
+body {
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  scrollbar-width: thin; /* optional */
+}
+
+/* WebKit scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track);
+}
+
 
 html {
     font-family: "Inter", serif;
@@ -2421,14 +2445,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .starrynight-bg-container {
   position: fixed;
-  z-index: 0;
+  z-index: 0; /* fundo */
   pointer-events: none;
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
   overflow: hidden;
-  background: linear-gradient(180deg, #1b2735 0%, #090a0f 100%);
+  background: linear-gradient(180deg, #9b5ee0 0%, #2534b8 100%);
 }
 
 @keyframes twinkle1 {
@@ -2510,6 +2534,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   pointer-events: none;
 }
 
+
 /* garantir que a UI fique acima das estrelas */
 .content-primary {
   position: relative;
@@ -2527,7 +2552,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   position: relative;
   z-index: 10;
 }
-
 .page.libraryPage.metadataEditorPage.noSecondaryNavPage.mainAnimatedPage {
   position: relative;
   z-index: 10;

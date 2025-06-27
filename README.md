@@ -1,6 +1,7 @@
 # Starry Night Theme
 
 - A sleek, animated night sky theme for Jellyfin, with a gradient background and twinkling stars inspired by [StarryNight](https://github.com/spicetify/spicetify-themes/blob/master/StarryNight/README.md) with rounded corners and elegant design by [ElegantFin](https://github.com/lscambo13/ElegantFin/tree/main) using [Custom Javascript Plugin](https://github.com/johnpc/jellyfin-plugin-custom-javascript) for the effects.
+
   ![LoginPage](Examples/AnimatedBackground.gif)
 
 # Instalation
@@ -26,6 +27,10 @@
 - Paste [CSS code](custom.css) into the box.
 
 - Scroll down and click Save.
+
+# Extra Styles
+
+- Get extra styles over [here](Styles/README.md)!
 
 # Credits
 
